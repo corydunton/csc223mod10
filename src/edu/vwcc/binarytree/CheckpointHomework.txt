@@ -1,0 +1,32 @@
+Checkpoint (Gaddis pp. 1289)
+
+        A
+       / \
+      /   \
+     B     C
+      \   / \
+       D  E  F
+            /
+           G
+
+Figure 21-1 (A Better Picture is in Gaddis - page 1288)
+
+21.1	Consider the binary tree T shown in Figure 21-1.
+a)	List the ancestors of each node G.
+b)	List the descendants of each node of C.
+c)	List all the leaf nodes of tree T.
+d)	List all the non-leaf nodes of tree T.
+e)	Show the nodes of T as output by a preorder traversal.
+f)	Show the nodes of T as output by a postorder traversal.
+g)	Show the nodes of T as output by an inorder traversal.
+
+21.2	Show the output from a postorder traversal of the two trees in Figure 21-1
+
+21.3	Show the output from a preorder traversal of the two trees in Figure 21-1
+ 
+21.4 Using the Node class defined in this section, draw the binary tree constructed by the following statements:
+    Node left = new Node(10, new Node(20), new Node(2O));
+    Node right = new Node(60, new Node(180), null);
+    Node tree = new Node(160, left, right);
+
+then list the nodes of the resulting binary tree in preorder.
