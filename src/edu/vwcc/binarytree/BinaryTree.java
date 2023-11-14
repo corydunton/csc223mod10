@@ -1,67 +1,64 @@
 package edu.vwcc.binarytree;
 
 /**
- * Generic Base binary tree class.
- * Author Name: [Your Name]
- * Date: [Your Date]
+ * Generic Base binary tree class. Author Name: Cory Dunton Date: 11/14/2023
  */
+
 public class BinaryTree<T> {
-    private Node<T> root; 
-  
+	private Node<T> root;
 
-    /*
-     * Performs an inorder traversal of this binary tree
-     * Note: this method has already been completed for you
-     * Also notice how to separate out the recursive implementation
-     */
-    public void inorderTraversal() {
-        inorderRecursive(root);
-    }
-    // the private recursive implementation method for inorderTraversal
-    private void inorderRecursive(Node<T> node) {
-        if (node != null) {
-            inorderRecursive(node.left);
-            System.out.print(node.value + " ");
-            inorderRecursive(node.right);
-        }
-    }
-    
-    /*
-     * Perform an preorder traversal of this binary tree
-     */
-    public void preorderTraversal() {
-        // TODO
-    }
-    
-    
-    /*
-     * Perform an postorder traversal of this binary tree
-     */
-    public void postorderTraversal() {
-        // TODO
-    }
-        
+	/*
+	 * Performs an inorder traversal of this binary tree Note: this method has
+	 * already been completed for you Also notice how to separate out the recursive
+	 * implementation
+	 */
+	public void inorderTraversal() {
+		inorderRecursive(root);
+	}
 
-    // Returns the number of nodes in the tree.
-    public int size() {
-        // TODO
-        return 0;
-    }
+	// the private recursive implementation method for inorderTraversal
+	private void inorderRecursive(Node<T> node) {
+		if (node != null) {
+			inorderRecursive(node.left);
+			System.out.print(node.value + " ");
+			inorderRecursive(node.right);
+		}
+	}
 
-    // Returns true if a node with the specified value exists in the tree, otherwise false.
-    public boolean contains(T value) {
-        // TODO
-        return false;
-    }
-    
-    // Returns the height of the tree (= number of edges between nodes)
-    public int height() {
-        // TODO
-        return -1;
-    }
+	/*
+	 * Perform an preorder traversal of this binary tree
+	 */
+	public void preorderTraversal() {
+		// TODO
+	}
 
+	/*
+	 * Perform an postorder traversal of this binary tree
+	 */
+	public void postorderTraversal() {
+		// TODO
+	}
 
-    // GETTER & SETTER
+	// Returns the number of nodes in the tree.
+	public int size() {
+		// TODO
+		return 0;
+	}
+
+	// Returns true if a node with the specified value exists in the tree, otherwise
+	// false.
+	public boolean contains(T value) {
+		// TODO
+		return false;
+	}
+
+	// Returns the height of the tree (= number of edges between nodes)
+	public int height() {
+		// TODO
+		return -1;
+	}
+
+	// GETTER & SETTER
 	public Node<T> getRoot() {
 		return root;
 	}
@@ -70,5 +67,3 @@ public class BinaryTree<T> {
 		this.root = root;
 	}
 }
-
-

@@ -3,6 +3,7 @@ package edu.vwcc.binarytree;
 /**
  * Generic Node class.
  */
+
 public class Node<T> {
 	T value;
 	Node<T> left, right;
